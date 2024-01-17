@@ -16,6 +16,7 @@ body {
     color: #fff;
     margin: 200px auto 0;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 .stopwatch h1 {
@@ -31,5 +32,7 @@ body {
 }
 
 .buttons img {
-    
+    width: 50px;
+    margin: 0 20px;
+    cursor: pointer;
 }
