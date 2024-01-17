@@ -3,22 +3,28 @@ let displayTime = document.getElementById("displayTime");
 let timer = null;
 
 function stopwatch() {
-    second++;
-
+    seconds++;
+    
     if (seconds == 60) {
         seconds = 0; 
         
         minutes ++;
-
+        
         if (minutes == 60) {
             minutes = 0;
+            hours++;
         }
 
-        hours++;
-        
     }
+    
+    displayTime.innerHTML = hours +":"+ minutes +":"+ seconds;
 } 
 
 function watchStart() {
-    setInterval ((stopwatch, 1000));
+    
+    if (timer!== null) {
+        clearInterval(timer);
+    }
+    
+    timer = setInterval (stopwatch, 1000);
 }
