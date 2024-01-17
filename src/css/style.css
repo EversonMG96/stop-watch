@@ -25,5 +25,11 @@ body {
 }
 
 .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.buttons img {
+    
 }
