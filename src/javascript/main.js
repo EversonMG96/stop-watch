@@ -14,10 +14,10 @@ function stopwatch() {
         }
 
         hours++;
-
-        if (hours == 24) {
-            hours = 0;
-        }
-         
+        
     }
 } 
+
+function watchStart() {
+    setInterval ((stopwatch, 1000));
+}
