@@ -36,5 +36,10 @@ function watchStart() {
 }
 
 function watchStop() {
-    
+    clearInterval(timer);
+}
+
+function watchReset() {
+    clearInterval(timer);
+    [seconds, minutes, hours] = [0, 0, 0];
 }
